@@ -9,7 +9,7 @@ description: "The weirdest pen club north of Columbus!"
 
 # Build settings
 
-remote_theme: jekyll/minima
+theme: minima
 
 plugins:
   - jekyll-feed
