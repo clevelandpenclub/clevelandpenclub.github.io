@@ -1,3 +1,9 @@
+---
+layout: page
+title: Schedule
+---
+
+
 Our inaugural Cleveland Pen Club meeting will take place on Sunday, January 26, 2025 in the meeting room at the Independence Branch of the Cuyahoga County Public Library from 1:15 p.m. until 3:00 p.m.
 (On Sundays the library doesn’t open until 1:00 p.m., so 1:15 p.m. was the first slot they offered.)
 The library, which I visited, is located at 6361 Selig Drive in Independence.
