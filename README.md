@@ -1,2 +1,4 @@
-# clevelandpenclub.github.io
-Website for the currently unnamed pen club in a certain city in ohio. Permanently a work-in-progress
+Welcome to the (currently unnamed) pen club!
+
+We meet quarterly in the greater cleveland area to talk about pens and stuff.
+Presumably more, but I've only been to a pen club once!
