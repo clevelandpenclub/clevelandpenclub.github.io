@@ -1,5 +1,5 @@
 ---
-title: Sophants of the Club
+title: Sophants
 ---
 
 There's a number of sophants* who participate in the (currently untitled) pen club.
