@@ -1,3 +1,7 @@
+---
+title: Thanks for Responding!
+---
+
 Hello Cleveland Pen Club enthusiasts,
 
 Hope you had a wonderful Thanksgiving and are enjoying the holiday season.

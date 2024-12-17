@@ -1,6 +1,10 @@
+---
+title: Happy Aftermath of Fountain Pen Day and Ohio Pen Show Weekend!
+---
+
 Greetings fountain pen locals!
 Happy aftermath of Fountain Pen Day and Ohio Pen Show weekend!
- Hope your pens and inks are bringing you much joy. 
+Hope your pens and inks are bringing you much joy. 
 
 I am excited to begin a pen club here in sunny Cleveland, Ohio.
 You received this email because you expressed interest at the Ohio Pen Show.
