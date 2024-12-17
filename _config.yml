@@ -19,6 +19,7 @@ plugins:
 header_pages:
   - schedule.md
   - sophants.md
+  - specimines.md
   - story.md
 
 # Set to `true` to show excerpts on the homepage.
