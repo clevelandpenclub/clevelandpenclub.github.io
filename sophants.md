@@ -34,9 +34,9 @@ I probably won't use anyone's real names either.
 </style>
 
 <div class="gallery">
-  <div class="item">
+  <div class="item">a 
     <img src="/assets/sophants/Amelorate.jpg" alt="Amelorate's Plushie" width=250 />
-    <p><em>Amelorate is the sophant who designed this website. They also like pens a lot.</em></p>
+    <p><em><a href="https://amel.pw/">Amelorate</a> is the sophant who designed this website. They also like pens a lot.</em></p>
   </div>
   <div class="item">
     <img src="/assets/sophants/M.jpg" alt="Literally just a picture of a wall" width=250 />
