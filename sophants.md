@@ -2,9 +2,7 @@
 title: Sophants
 ---
 
-There's a number of sophants* who participate in the (currently untitled) pen club.
-I don't actually want to have anyone's faces here, but it's fun if each of us have a representitive picture regardless.
-I probably won't use anyone's real names either.
+To state the obvious, I'm not using anyone's real names or faces. 
 
 <style>
 .gallery {
