@@ -40,6 +40,10 @@ These aren't actually for sale or anything, these are just pens I wanted to show
     <img src="/assets/pens/GravitasUltiMonoc.jpg" alt="Gravitas Ultimate Acryllic with Monoc Nib" width=250 />
     <p><em>Gravitas Ultimate Acryllic with Schon DSGN Monoc Nib</em></p>
   </div>
+  <div class="item">
+    <img src="/assets/pens/Pilot823Rikka.jpg" alt="Pilot Custom Heritage 823 Rikka" width=250 />
+    <p><em>Pilot Custom Heritage 823 Special Edition Rikka</em></p>
+  </div>
 </div>
 
 <script src="https://giscus.app/client.js"
