@@ -42,7 +42,7 @@ These aren't actually for sale or anything, these are just pens I wanted to show
   </div>
   <div class="item">
     <img src="/assets/pens/Pilot823Rikka.jpg" alt="Pilot Custom Heritage 823 Rikka" width=250 />
-    <p><em>Pilot Custom Heritage 823 Special Edition Rikka</em> [(more pictures)]({% post_url 2025-01-13-More-Pictures-of-the-Pilot-Custom-Heritage-823-Rikka-Special-Edition %})</p>
+    <p><em>Pilot Custom Heritage 823 Special Edition Rikka</em> <a href="{% post_url 2025-01-13-More-Pictures-of-the-Pilot-Custom-Heritage-823-Rikka-Special-Edition %}">(more pictures)</a></p>
   </div>
 </div>
 
