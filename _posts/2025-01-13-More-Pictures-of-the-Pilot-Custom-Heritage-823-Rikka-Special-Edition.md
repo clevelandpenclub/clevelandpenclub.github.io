@@ -17,6 +17,11 @@ Being the proud owner of such a pen, I decided to take some better pictures on m
 ![Showing the cap compared to the body](/assets/pens/CH823Green/8.jpg)
 ![The pen under flash photography](/assets/pens/CH823Green/9.jpg)
 
+# More pictures on the internet
+
+* [Listing of the pen on Rakuten](https://item.rakuten.co.jp/bungunoarukurashi/4902505999598/)
+* [big_seaplant on reddit](https://www.reddit.com/r/fountainpens/comments/1hnkaoo/npd_pilot_custom_823_green/)
+
 [^1]: On the Rakuten listings for the special edition Google Translate will sometimes translate it as Rokka, [but this is incorrect.](https://www.reddit.com/r/fountainpens/comments/1hnkaoo/npd_pilot_custom_823_green/m42xzvj/) The correct way to romanize the name is Rikka, which is also seen in [Pilot Iroshizuki Rikka](https://www.gentlemanstationer.com/blog/2024/12/17/new-arrivals-new-iroshizuku-inks). 
 
 <script src="https://giscus.app/client.js"
