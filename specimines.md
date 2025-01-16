@@ -44,6 +44,10 @@ These aren't actually for sale or anything, these are just pens I wanted to show
     <img src="/assets/pens/Pilot823Rikka.jpg" alt="Pilot Custom Heritage 823 Rikka" width=250 />
     <p><em>Pilot Custom Heritage 823 Special Edition Rikka</em> <a href="{% post_url 2025-01-13-More-Pictures-of-the-Pilot-Custom-Heritage-823-Rikka-Special-Edition %}">(more pictures)</a></p>
   </div>
+  <div class="item">
+    <img src="/assets/pens/MoonmanTi500.jpg" alt="Moonman Ti500" width=250 />
+    <p><em>Moonman Ti500</em></p>
+  </div>
 </div>
 
 <script src="https://giscus.app/client.js"
