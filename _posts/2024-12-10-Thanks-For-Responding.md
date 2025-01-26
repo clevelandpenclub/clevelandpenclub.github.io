@@ -38,4 +38,4 @@ If it was you, and you are still willing to help, please contact me directly—I
 Feel free to get in touch with any questions.
 I hope everyone has wonderful holidays and a strong start to the new year, and I look forward to our meeting next month.
 
---M
+--Michelle

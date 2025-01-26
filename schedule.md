@@ -30,7 +30,7 @@ Alcoholic beverages are not permitted on Library premises.”
 Frankly, my takeaway from this is that we can bring food!
 Feel free to bring a snack to share if you wish.
 
---M
+--Michelle
 
 [Edit this page](https://github.com/clevelandpenclub/clevelandpenclub.github.io/edit/main/schedule.md)
 

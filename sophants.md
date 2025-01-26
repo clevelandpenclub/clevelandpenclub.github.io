@@ -38,7 +38,7 @@ To state the obvious, I'm not using anyone's real names or faces.
   </div>
   <div class="item">
     <img src="/assets/sophants/M.jpg" alt="Literally just a picture of a wall" width=250 />
-    <p><em>M is the lady who founded the (currently untitled) pen club. I haven’t met her yet because she was eating lunch when I passed her booth at the Ohio Pen Show.</em></p>
+    <p><em>Michelle is the lady who founded the (currently untitled) pen club. I haven’t met her yet because she was eating lunch when I passed her booth at the Ohio Pen Show.</em></p>
   </div>
 </div>
 
