@@ -32,7 +32,7 @@ Feel free to bring a snack to share if you wish.
 
 --Michelle
 
-1/26/2025 @ 10:52PM
+1/26/2025 @ 10:52PM:
 
 That was a great meet!
 I'm exhausted.
