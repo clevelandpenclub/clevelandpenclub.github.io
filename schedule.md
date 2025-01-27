@@ -32,6 +32,16 @@ Feel free to bring a snack to share if you wish.
 
 --Michelle
 
+1/26/2025 @ 10:52PM
+
+That was a great meet!
+I'm exhausted.
+If my understanding of the above post is correct, our next meeting is Sunday, April 27th.
+Presumably from 1:15 to 3:00 PM, but I think maybe we should try to reserve more time.
+The 2 hours and 45 minutes passed in half of a heartbeat, but we stayed until 5:00 this time because nobody had the meeting room reserved after us.
+
+--Amelorate
+
 [Edit this page](https://github.com/clevelandpenclub/clevelandpenclub.github.io/edit/main/schedule.md)
 
 <script src="https://giscus.app/client.js"
