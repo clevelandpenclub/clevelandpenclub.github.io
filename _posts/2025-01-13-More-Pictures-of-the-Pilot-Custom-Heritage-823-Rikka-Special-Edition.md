@@ -38,4 +38,4 @@ Being the proud owner of such a pen, I decided to take some better pictures on m
         data-lang="en"
         crossorigin="anonymous"
         async>
-</script
+</script>
