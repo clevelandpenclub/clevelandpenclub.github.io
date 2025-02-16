@@ -3,6 +3,22 @@ layout: page
 title: Schedule
 ---
 
+2/16/2025 @ 7:50 PM:
+
+I've confirmed it with Michelle, our next meeting is indeed Sunday, April 27th from 1:30PM to 4:00PM.
+We've got more time compared to last time, and I'm sure we'll use every moment of it.
+
+--Amelorate
+
+1/26/2025 @ 10:52PM:
+
+That was a great meet!
+I'm exhausted.
+If my understanding of the below post is correct, our next meeting is Sunday, April 27th.
+Presumably from 1:15 to 3:00 PM, but I think maybe we should try to reserve more time.
+The 2 hours and 45 minutes passed in half of a heartbeat, but we stayed until 5:00 this time because nobody had the meeting room reserved after us.
+
+--Amelorate
 
 Our inaugural Cleveland Pen Club meeting will take place on Sunday, January 26, 2025 in the meeting room at the Independence Branch of the Cuyahoga County Public Library from 1:15 p.m. until 3:00 p.m.
 (On Sundays the library doesn’t open until 1:00 p.m., so 1:15 p.m. was the first slot they offered.)
@@ -31,16 +47,6 @@ Frankly, my takeaway from this is that we can bring food!
 Feel free to bring a snack to share if you wish.
 
 --Michelle
-
-1/26/2025 @ 10:52PM:
-
-That was a great meet!
-I'm exhausted.
-If my understanding of the above post is correct, our next meeting is Sunday, April 27th.
-Presumably from 1:15 to 3:00 PM, but I think maybe we should try to reserve more time.
-The 2 hours and 45 minutes passed in half of a heartbeat, but we stayed until 5:00 this time because nobody had the meeting room reserved after us.
-
---Amelorate
 
 [Edit this page](https://github.com/clevelandpenclub/clevelandpenclub.github.io/edit/main/schedule.md)
 
