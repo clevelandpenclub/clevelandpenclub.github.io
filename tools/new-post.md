@@ -95,8 +95,7 @@ title: Title Goes Here!
         data-theme="preferred_color_scheme"
         data-lang="en"
         crossorigin="anonymous"
-        async>
-</script>
+        async></script>
         </textarea>
         <button onclick="copyToClipboard('comments-text')">Copy to Clipboard</button>
     </div>
