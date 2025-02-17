@@ -1,5 +1,5 @@
 ---
-title: Next Meetup: Sunday April 27th at 1:30PM
+title: Next Meetup Sunday April 27th at 1:30PM
 ---
 
 Cuyahoga County Public
