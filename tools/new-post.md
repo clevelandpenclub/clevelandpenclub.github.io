@@ -58,7 +58,7 @@
     </script>
 </head>
 <body>
-    <h1>Jekyll Post Creator</h1>
+    <h1>New Post</h1>
     <label for="title">Post Title:</label>
     <input type="text" id="title" placeholder="Enter post title" required oninput="updateInfoBox()">
     <br>
