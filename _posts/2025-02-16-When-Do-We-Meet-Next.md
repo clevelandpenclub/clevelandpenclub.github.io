@@ -1,7 +1,7 @@
 ---
-title: When Do We Meet Next?
+title: Next Meetup: Sunday April 27th at 1:30PM
 ---
 
-The short version: Sunday, April 27th from 1:30PM to 4PM.
-
-The long version: [Schedule](/schedule.html)
+Cuyahoga County Public
+Library - Independence Branch, 6361
+Selig Drive, Independence, Ohio.
