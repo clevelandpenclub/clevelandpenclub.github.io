@@ -16,12 +16,12 @@
             infoBox.style.display = hasIllegalChars ? "block" : "none";
         }
 
-        function copyToClipboard() {
-            const preambleText = document.getElementById("preamble-text");
-            preambleText.select();
-            preambleText.setSelectionRange(0, 99999);
+        function copyToClipboard(id) {
+            const textElement = document.getElementById(id);
+            textElement.select();
+            textElement.setSelectionRange(0, 99999);
             document.execCommand("copy");
-            alert("Preamble copied to clipboard!");
+            alert("Copied to clipboard!");
         }
 
         function generatePostLink() {
@@ -50,6 +50,11 @@
             
             window.open(githubUrl, "_blank");
         }
+
+        function toggleCommentsBox() {
+            const commentsBox = document.getElementById("comments-box");
+            commentsBox.style.display = document.getElementById("include-comments").checked ? "block" : "none";
+        }
     </script>
 </head>
 <body>
@@ -60,6 +65,10 @@
     <label for="date">Post Date:</label>
     <input type="date" id="date" required><script>document.getElementById('date').valueAsDate = new Date();</script>
     <br>
+    <label>
+        <input type="checkbox" id="include-comments" onchange="toggleCommentsBox()"> Include Comments Section
+    </label>
+    <br>
     <button onclick="generatePostLink()">Next</button>
     
     <div id="info-box" style="display: none; margin-top: 20px; padding: 10px; border: 1px solid #ccc; background: #f9f9f9;">
@@ -67,7 +76,29 @@
         <textarea id="preamble-text" readonly style="width: 100%; height: 60px;">---
 title: Title Goes Here!
 ---</textarea>
-        <button onclick="copyToClipboard()">Copy to Clipboard</button>
+        <button onclick="copyToClipboard('preamble-text')">Copy to Clipboard</button>
+    </div>
+    
+    <div id="comments-box" style="display: none; margin-top: 20px; padding: 10px; border: 1px solid #ccc; background: #f9f9f9;">
+        <p>Paste the following at the <strong>end</strong> of your article to include comments:</p>
+        <textarea id="comments-text" readonly style="width: 100%; height: 120px;">
+<script src="https://giscus.app/client.js"
+        data-repo="clevelandpenclub/clevelandpenclub.github.io"
+        data-repo-id="R_kgDONeh5oQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDONeh5oc4Cl6ba"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+        </textarea>
+        <button onclick="copyToClipboard('comments-text')">Copy to Clipboard</button>
     </div>
 </body>
 </html>
