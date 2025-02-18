@@ -21,6 +21,7 @@ header_pages:
   - sophants.md
   - specimines.md
   - story.md
+  - send-a-note.md
 
 # Set to `true` to show excerpts on the homepage.
 #show_excerpts: true
