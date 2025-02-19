@@ -12,7 +12,7 @@
             const cleanTitle = titleInput.replace(/[^a-zA-Z0-9\s-]/g, "").replace(/\s+/g, "-");
             const hasIllegalChars = titleInput !== cleanTitle.replace(/-/g, " ");
             
-            preambleText.value = `---\ntitle: ${titleInput || "Title Goes Here!"}\n---`;
+            preambleText.value = `---\ntitle: "${titleInput || "Title Goes Here!"}"\n---`;
             infoBox.style.display = hasIllegalChars ? "block" : "none";
         }
 
