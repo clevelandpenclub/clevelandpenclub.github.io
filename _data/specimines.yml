@@ -1,0 +1,15 @@
+- src: "/assets/pens/PilotMyu.jpg"
+  alt: "Pilot Myu"
+  description: "*Pilot Myu*"
+
+- src: "/assets/pens/GravitasUltiMonoc.jpg"
+  alt: "Gravitas Ultimate Acryllic with Monoc Nib"
+  description: "*Gravitas Ultimate Acryllic with Schon DSGN Monoc Nib*"
+
+- src: "/assets/pens/Pilot823Rikka.jpg"
+  alt: "Pilot Custom Heritage 823 Rikka"
+  description: "*Pilot Custom Heritage 823 Special Edition Rikka* [more pictures]({% post_url 2025-01-13-More-Pictures-of-the-Pilot-Custom-Heritage-823-Rikka-Special-Edition %})"
+
+- src: "/assets/pens/MoonmanTi500.jpg"
+  alt: "Moonman Ti500"
+  description: "*Moonman Ti500*"
