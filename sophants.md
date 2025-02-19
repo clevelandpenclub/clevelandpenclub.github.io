@@ -32,15 +32,14 @@ To state the obvious, I'm not using anyone's real names or faces.
 </style>
 
 <div class="gallery">
+  {% for item in site.data.sophants %}
   <div class="item">
-    <img src="/assets/sophants/Amelorate.jpg" alt="Amelorate's Plushie" width=250 />
-    <p><em><a href="https://amel.pw/">Amelorate</a> is the sophant who designed this website. They also like pens a lot.</em></p>
+    <img src="{{ item.src }}" alt="{{ item.alt }}" width="250" />
+    <p>{{ item.description | markdownify }}</p>
   </div>
-  <div class="item">
-    <img src="/assets/sophants/M.jpg" alt="Literally just a picture of a wall" width=250 />
-    <p><em>Michelle is the lady who founded the (currently untitled) pen club. She seems way too busy, but somehow she still put together this whole club thing.</em></p>
-  </div>
+  {% endfor %}
 </div>
+
 
 * Sophant: An entity with a human-level level intelligence
 
