@@ -32,22 +32,12 @@ These aren't actually for sale or anything, these are just pens I wanted to show
 </style>
 
 <div class="gallery">
+  {% for item in site.data.specimines %}
   <div class="item">
-    <img src="/assets/pens/PilotMyu.jpg" alt="Pilot Myu" width=250 />
-    <p><em>Pilot Myu</em></p>
+    <img src="{{ item.src }}" alt="{{ item.alt }}" width="250" />
+    <p>{{ item.description | markdownify }}</p>
   </div>
-  <div class="item">
-    <img src="/assets/pens/GravitasUltiMonoc.jpg" alt="Gravitas Ultimate Acryllic with Monoc Nib" width=250 />
-    <p><em>Gravitas Ultimate Acryllic with Schon DSGN Monoc Nib</em></p>
-  </div>
-  <div class="item">
-    <img src="/assets/pens/Pilot823Rikka.jpg" alt="Pilot Custom Heritage 823 Rikka" width=250 />
-    <p><em>Pilot Custom Heritage 823 Special Edition Rikka</em> <a href="{% post_url 2025-01-13-More-Pictures-of-the-Pilot-Custom-Heritage-823-Rikka-Special-Edition %}">(more pictures)</a></p>
-  </div>
-  <div class="item">
-    <img src="/assets/pens/MoonmanTi500.jpg" alt="Moonman Ti500" width=250 />
-    <p><em>Moonman Ti500</em></p>
-  </div>
+  {% endfor %}
 </div>
 
 <script src="https://giscus.app/client.js"
