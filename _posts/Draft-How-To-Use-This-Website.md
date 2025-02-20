@@ -69,6 +69,8 @@ You can find a [quick reference for Markdown here.](https://gist.github.com/Mynd
 Markdown is a way of writing documents that allows you to use plain text in any editor to create a web page.
 If you've ever used WordPerfect or WordStar for Microsoft DOS, it's kind of like that.
 
+Make sure to credit yourself at the end of your article by writing something like `--Amelorate`.
+
 Once you've written your article, you should click *Commit changes...*, and then *Commit changes*/*Propose changes* in the popup.
 You don't really need to change the Commit message or the description if it's for a new article.
 The default message is good enough.
