@@ -81,11 +81,9 @@ title: Title Goes Here!
     
     <div id="comments-box" style="display: none; margin-top: 20px; padding: 10px; border: 1px solid #ccc; background: #f9f9f9;">
         <p>Paste the following at the <strong>end</strong> of your article to include comments:</p>
-        <textarea id="comments-text" readonly style="width: 100%; height: 120px;">
-{% raw  %}
+        <textarea id="comments-text" readonly style="width: 100%; height: 120px;">{% raw  %}
 {% include cle-comments.md %}
-{% endraw %}
-        </textarea>
+{% endraw %}</textarea>
         <button onclick="copyToClipboard('comments-text')">Copy to Clipboard</button>
     </div>
 
