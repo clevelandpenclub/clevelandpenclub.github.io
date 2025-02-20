@@ -90,4 +90,18 @@ Then, just do the same thing you did with Creating a Post in terms of clicking *
 
 ## Editing Other Pages
 
+On the top bar of the website, there's pages like Sophants, Specimines, Story, and so on.
+These are kept in the [base folder of ther website's Github](https://github.com/clevelandpenclub/clevelandpenclub.github.io), and they can be edited much like posts.
+Files that end in `.md` are pages that you can edit.
+Files that don't end in `.md` are important for keeping the website working.
+You might want to avoid touching those.
+
+Most of the pages here are pretty simple, but there are a few complications.
+* `README.MD` is the home page of the website.
+* `sophants.md` and `specimines.md` are both really complicated:
+  Both of these pages use a data-driven approach, where all of their actual content is stored in the [_data folder.](https://github.com/clevelandpenclub/clevelandpenclub.github.io/tree/main/_data)
+  If you know how to edit YAML, feel free to edit this.
+  If you don't, don't feel obligated to learn it.
+  Just ask Amelorate, and she'll take care of it.
+
 {% include cle-comments.md %}
