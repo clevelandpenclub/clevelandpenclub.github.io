@@ -1,3 +1,6 @@
+* TOC
+{:toc}
+
 Hey, it's Amelorate.
 I wrote the backbones of the website you're reading now.
 Unfortunately, I've got severe programmer-brain, so a lot of the things on this website don't really work the way you'd expect.
