@@ -8,7 +8,19 @@ For the rest of you, you're the target audience of this guide.
 
 # How The Website Is Made
 
-You don't really need to understand this part of the article to follow the other sections below, but [todo write the rest later]
+You don't really need to understand this part of the article to follow the other sections below, but it's probably good to have an understanding instead of me just telling you what buttons to press.
+
+This website is published on Github Pages, which is a free service designed for computer programmers to host simple documentation about their projects online.
+Using Github Pages, you can make Static Sites only.
+That means that any pages that change because of user input needs to go through Github, instead of being able to simply change the page.
+That's why you need a Github account to comment, and to edit pages.
+Also because Github Pages was designed for programmers, a lot of the words they use for things are very obtuse.
+You kind of need an entire glossary just to understand what they're really saying.
+
+In terms of how the website is laid out, it's basically just a folder on a computer.
+There's files in the folder, and the way the files are laid out and the text inside the files determines the contents of the website.
+When you put a file in the _posts folder with the right name, it'll be displayed as a blog post.
+And if you put a file elsewhere, it'll be hosted on the web at that path.
 
 # Comments Sections
 
