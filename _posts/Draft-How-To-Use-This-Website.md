@@ -78,6 +78,10 @@ If you don't then you've got to continue on to create a Pull Request, which is a
 Just click *Create pull request*, and then once again click *Create pull request* on the new screen.
 Amelorate will get an email and he'll put your changes online.
 
+In terms of copyright, the Cleveland Pen Club website is licensed under [Creative Commmons Zero.](https://creativecommons.org/public-domain/cc0/)
+This means that the webite, everything written on it, and all its pictures lack copyright, and are in the Public Domain.
+If this is a problem, you could include a different license at the bottom of the article you've written.
+
 ## Editing Existing Posts
 
 The website's posts are stored in the [_posts folder](https://github.com/clevelandpenclub/clevelandpenclub.github.io/tree/main/_posts) in Github.
