@@ -86,7 +86,7 @@ Once you're done, hit *Commit changes...*, and give it a message describing whic
 Additional details about your changes can be added in the description.
 Then, just do the same thing you did with Creating a Post in terms of clicking *Commit changes* if you have access or *Propose changes* if you don't.
 
-![Arrow pointing to the edit button](assets/EditTutorial.png)
+![Arrow pointing to the edit button](/assets/EditTutorial.png)
 
 ## Editing Other Pages
 
