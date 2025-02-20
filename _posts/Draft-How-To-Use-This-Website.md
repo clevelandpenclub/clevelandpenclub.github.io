@@ -51,6 +51,33 @@ At the very least, I've got some screenshots of the buttons to press:
 
 # Creating a Post
 
+You may have noticed the [Make a new post](/tools/new-post.html) link on the main page.
+Unsuprisingly, this is the first part of making a new post.
+Simply fill in the title of your article, and if the date of the article isn't today you can change it using the date selector.
+If your title has special characters, you'll have to copy and paste the section of code at the **beginning** of your post or else the special characters will be removed.
+Also, if you want your post to have a comment section, you can click the checkbox.
+You'll have to paste that section of code at the **end** of your post for it to work.
+Then, click *Next*.
+
+If you've got access to edit the website directly, then you'll just be able to write your article in the box.
+If you don't have access, you'll have to click the *Fork this repository* button, and then you'll be able to write it.
+Forking a repositiory is like making a copy of the website onto computer so you can make changes to it.
+However, instead of your computer it'll be copied to Github's computers instead.
+
+Once you've got the editing screen open, you can write your post here in [Github Flavored Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+You can find a [quick reference for Markdown here.](https://gist.github.com/Myndex/5140d6fe98519bb15c503c490e713233)
+Markdown is a way of writing documents that allows you to use plain text in any editor to create a web page.
+If you've ever used WordPerfect or WordStar for Microsoft DOS, it's kind of like that.
+
+Once you've written your article, you should click *Commit changes...*, and then *Commit changes*/*Propose changes* in the popup.
+You don't really need to change the Commit message or the description if it's for a new article.
+The default message is good enough.
+
+If you've got access to edit the website directly, then you're done!
+If you don't then you've got to continue on to create a Pull Request, which is a formal request to make a change to the website.
+Just click *Create pull request*, and then once again click *Create pull request* on the new screen.
+Amelorate will get an email and he'll put your changes online.
+
 ## Editing Existing Posts
 
 ## Editing Other Pages
