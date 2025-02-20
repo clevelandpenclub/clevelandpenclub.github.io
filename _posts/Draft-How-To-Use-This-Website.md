@@ -1,7 +1,7 @@
 Hey, it's Amelorate.
 I wrote the backbones of the website you're reading now.
 Unfortunately, I've got severe programmer-brain, so a lot of the things on this website don't really work the way you'd expect.
-For those in the know, the words you need to know are that this is a Static Site hosted on [Github](https://github.com/clevelandpenclub/clevelandpenclub.github.io) [Pages](https://pages.github.com).
+For those in the know, the magic words are this is a Static Site hosted on [Github](https://github.com/clevelandpenclub/clevelandpenclub.github.io) [Pages](https://pages.github.com).
 Comments are done using [Giscus](https://giscus.app).
 
 For the rest of you, you're the target audience of this guide.
@@ -14,30 +14,29 @@ You don't really need to understand this part of the article to follow the other
 
 To leave a comment, just click the Sign In With Github button, authorize the app, and you should be able to write your comment.
 If you don't have a Github account, you'll be given the opportunity to create one.
+The other parts of this guide will also prompt you to either sign into your account or create one when it's needed.
 
 ## How To Get An Email When Someone Comments
 
-Now if you really want to be involved, you can sign up to be emailed whenever anyone comments on an article or has something to say about the website.
+If you really want to be involved, you can sign up to be emailed whenever anyone comments on an article or has something to say about the website.
 
 In order to do so, first [click this link to navigate to the website's Github Repository.](https://github.com/clevelandpenclub/clevelandpenclub.github.io)
 Then, you'll click the 👁️Watch button near the top right of your screen.
 
 There's a few options for how many emails you'll get: 
-All Activity will send you an email whenever anyone comments, makes changes to the website, proposes changes to the website, or really does anything related to the website.
-Custom lets you select which things will email you.
-We use Issues for things that are to-do.
-For example, if there's a bug with the website or something that's incomplete, we'd create an issue.
-Suggestions for articles to write would also be an issue.
-Pull Requests are suggestions for the website.
-For example, if someone's written an article for us that'll be a Pull Request.
-The last feature that we use are Discussions.
-When you make a comment on an article, it'll create a discussion and reply to it with that comment.
-However, there is a sour point: If someone reacts to an article that has zero reactions and zero comments, it'll send you an annoying and confusing email.
-Sorry, this can't be fixed.
-I wish I could, but it's one of those things where everyone you complain to points the finger at someone else.
-In the first place, there's nobody to complain to because nobody's being paid for any of this.
-
-At the very least, I've got some screenshots of the buttons to press:
+* All Activity will send you an email whenever anyone comments, makes changes to the website, proposes changes to the website, or really does anything related to the website.
+* Custom lets you select which things will email you.
+  * We use Issues for things that are to-do.
+    For example, if there's a bug with the website or something that's incomplete, we'd create an issue.
+    Suggestions for articles to write would also be an issue.
+   * Pull Requests are suggestions for changes to the website that someone's already written.
+     For example, if someone's written an article for us that'll be a Pull Request.
+   * The last feature that we use are Discussions.
+     When you make a comment on an article, it'll create a discussion and reply to it with that comment.
+     However, there is a sour point: If someone reacts to an article that has zero reactions and zero comments, it'll send you an annoying and confusing email.
+     Sorry, this can't be fixed.
+     I wish I could, but it's one of those things where everyone you complain to points the finger at someone else.
+     In the first place, there's nobody to complain to because nobody's being paid for any of this.
 
 ![Arrow pointing to the Watch button](/assets/CommentTutorial1.png)
 
@@ -78,16 +77,16 @@ The default message is good enough.
 If you've got access to edit the website directly, then you're done!
 If you don't then you've got to continue on to create a Pull Request, which is a formal request to make a change to the website.
 Just click *Create pull request*, and then once again click *Create pull request* on the new screen.
-Amelorate will get an email and he'll put your changes online.
+Amelorate will get an email and he'll put your changes online soon.
 
 In terms of copyright, the Cleveland Pen Club website is licensed under [Creative Commmons Zero.](https://creativecommons.org/public-domain/cc0/)
-This means that the webite, everything written on it, and all its pictures lack copyright, and are in the Public Domain.
-If this is a problem, you could include a different license at the bottom of the article you've written.
+This means that the webite, everything written on it, and all its pictures entirely lack copyright and are in the Public Domain.
+If this is a problem, you could include a different license at the bottom of the article you've written as long as the Cleveland Pen Club and Github are allowed to distriute the file and make changes as needed.
 
 ## Editing Existing Posts
 
 The website's posts are stored in the [_posts folder](https://github.com/clevelandpenclub/clevelandpenclub.github.io/tree/main/_posts) in Github.
-After it's been added you can edit a post by clicking the post you want to edit, and then clicking the pencil icon in the top left corner.
+You can edit a post by clicking the post you want to edit, and then clicking the pencil icon in the top left corner.
 Once you're done, hit *Commit changes...*, and give it a message describing which post you're editing and what kind of a change you've made in one sentence.
 Additional details about your changes can be added in the description.
 Then, just do the same thing you did with Creating a Post in terms of clicking *Commit changes* if you have access or *Propose changes* if you don't.
