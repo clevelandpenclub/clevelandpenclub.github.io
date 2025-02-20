@@ -80,6 +80,14 @@ Amelorate will get an email and he'll put your changes online.
 
 ## Editing Existing Posts
 
+The website's posts are stored in the [_posts folder](https://github.com/clevelandpenclub/clevelandpenclub.github.io/tree/main/_posts) in Github.
+After it's been added you can edit a post by clicking the post you want to edit, and then clicking the pencil icon in the top left corner.
+Once you're done, hit *Commit changes...*, and give it a message describing which post you're editing and what kind of a change you've made in one sentence.
+Additional details about your changes can be added in the description.
+Then, just do the same thing you did with Creating a Post in terms of clicking *Commit changes* if you have access or *Propose changes* if you don't.
+
+![Arrow pointing to the edit button](assets/EditTutorial.png)
+
 ## Editing Other Pages
 
 {% include cle-comments.md %}
