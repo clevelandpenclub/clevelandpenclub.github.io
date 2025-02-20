@@ -82,25 +82,14 @@ title: Title Goes Here!
     <div id="comments-box" style="display: none; margin-top: 20px; padding: 10px; border: 1px solid #ccc; background: #f9f9f9;">
         <p>Paste the following at the <strong>end</strong> of your article to include comments:</p>
         <textarea id="comments-text" readonly style="width: 100%; height: 120px;">
-<script src="https://giscus.app/client.js"
-        data-repo="clevelandpenclub/clevelandpenclub.github.io"
-        data-repo-id="R_kgDONeh5oQ"
-        data-category="Announcements"
-        data-category-id="DIC_kwDONeh5oc4Cl6ba"
-        data-mapping="pathname"
-        data-strict="1"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async></script>
+{% raw  %}
+{% include cle-comments.md %}
+{% endraw %}
         </textarea>
         <button onclick="copyToClipboard('comments-text')">Copy to Clipboard</button>
     </div>
 
-    <script src="https://giscus.app/client.js" data-repo="clevelandpenclub/clevelandpenclub.github.io" data-repo-id="R_kgDONeh5oQ" data-category="Announcements" data-category-id="DIC_kwDONeh5oc4Cl6ba" data-mapping="pathname" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async=""></script>
+    {% include cle-comments.md %}
 </body>
 </html>
 
