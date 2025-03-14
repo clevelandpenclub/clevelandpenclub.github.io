@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        #editor {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: white;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #controls {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        label {
+            padding: 10px;
+            border: 1px solid #007BFF;
+            background-color: white;
+            color: #007BFF;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="number"] {
+            width: 80px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        select {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="editor">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <div id="controls">
+        <label for="fileInput">Upload Image</label>
+        <input type="file" id="fileInput" accept="image/*">
+
+        <select id="orientation">
+            <option value="portrait">Portrait</option>
+            <option value="landscape">Landscape</option>
+        </select>
+
+        <div>
+            <input type="number" id="resolutionWidth" value="300" min="1"> x
+            <input type="number" id="resolutionHeight" value="400" min="1">
+        </div>
+
+        <button id="downloadButton" disabled>Download</button>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const orientation = document.getElementById('orientation');
+        const resolutionWidth = document.getElementById('resolutionWidth');
+        const resolutionHeight = document.getElementById('resolutionHeight');
+        const downloadButton = document.getElementById('downloadButton');
+
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        const outlines = {
+            portrait: 'outlineportrait.png',
+            landscape: 'outlinelandscape.png'
+        };
+
+        let uploadedImage = null;
+        let offsetX = 0;
+        let offsetY = 0;
+        let scale = 1;
+        let dragging = false;
+        let lastX = 0;
+        let lastY = 0;
+        let currentOutline = new Image();
+
+        function setCanvasSize() {
+            const width = orientation.value === 'portrait' ? 300 : 400;
+            const height = orientation.value === 'portrait' ? 400 : 300;
+            canvas.width = width;
+            canvas.height = height;
+            document.getElementById('editor').style.width = `${width}px`;
+            document.getElementById('editor').style.height = `${height}px`;
+        }
+
+        function loadOutline() {
+            currentOutline.src = outlines[orientation.value];
+            currentOutline.onload = draw;
+        }
+
+        function adjustResolutionAspect() {
+            const aspectRatio = orientation.value === 'portrait' ? 4 / 3 : 3 / 4;
+            if (this.id === 'resolutionWidth') {
+                resolutionHeight.value = Math.round(resolutionWidth.value * aspectRatio);
+            } else {
+                resolutionWidth.value = Math.round(resolutionHeight.value / aspectRatio);
+            }
+        }
+
+        resolutionWidth.addEventListener('input', adjustResolutionAspect);
+        resolutionHeight.addEventListener('input', adjustResolutionAspect);
+
+        fileInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    uploadedImage = new Image();
+                    uploadedImage.onload = () => {
+                        draw();
+                        downloadButton.disabled = false;
+                    };
+                    uploadedImage.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        orientation.addEventListener('change', () => {
+            setCanvasSize();
+            loadOutline();
+	    adjustResolutionAspect();
+        });
+
+        canvas.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            const zoomFactor = 0.1;
+            scale += e.deltaY > 0 ? -zoomFactor : zoomFactor;
+            scale = Math.max(0.1, scale); // Allow unlimited zoom-out
+            draw();
+        });
+
+        canvas.addEventListener('mousedown', (e) => {
+            dragging = true;
+            lastX = e.offsetX;
+            lastY = e.offsetY;
+        });
+
+        window.addEventListener('mousemove', (e) => {
+            if (dragging) {
+                const rect = canvas.getBoundingClientRect();
+                const mouseX = e.clientX - rect.left;
+                const mouseY = e.clientY - rect.top;
+                offsetX += mouseX - lastX;
+                offsetY += mouseY - lastY;
+                lastX = mouseX;
+                lastY = mouseY;
+                draw();
+            }
+        });
+
+        window.addEventListener('mouseup', () => {
+            dragging = false;
+        });
+
+        downloadButton.addEventListener('click', () => {
+            const finalWidth = Number(resolutionWidth.value);
+            const finalHeight = Number(resolutionHeight.value);
+            const finalCanvas = document.createElement('canvas');
+            finalCanvas.width = finalWidth;
+            finalCanvas.height = finalHeight;
+            const finalCtx = finalCanvas.getContext('2d');
+
+            // Scale factors between editor canvas and final download resolution
+            const scaleFactorX = finalWidth / canvas.width;
+            const scaleFactorY = finalHeight / canvas.height;
+
+            // Calculate scaled dimensions and offsets for the uploaded image
+            const imgScaledWidth = uploadedImage.width * scale;
+            const imgScaledHeight = uploadedImage.height * scale;
+            const imgOffsetX = (canvas.width / 2 - imgScaledWidth / 2 + offsetX) * scaleFactorX;
+            const imgOffsetY = (canvas.height / 2 - imgScaledHeight / 2 + offsetY) * scaleFactorY;
+
+            // Debugging logs
+            console.log({
+                finalWidth,
+                finalHeight,
+                canvasWidth: canvas.width,
+                canvasHeight: canvas.height,
+                offsetX,
+                offsetY,
+                scale,
+                imgScaledWidth,
+                imgScaledHeight,
+                imgOffsetX,
+                imgOffsetY,
+                scaleFactorX,
+                scaleFactorY
+            });
+
+            // Draw the uploaded image onto the final canvas
+            finalCtx.drawImage(
+                uploadedImage,
+                imgOffsetX,
+                imgOffsetY,
+                imgScaledWidth * scaleFactorX,
+                imgScaledHeight * scaleFactorY
+            );
+
+            // Draw the outline on top of the final canvas
+            finalCtx.drawImage(currentOutline, 0, 0, finalWidth, finalHeight);
+
+            // Create a download link for the user
+            const link = document.createElement('a');
+            link.download = 'edited-image.png';
+            link.href = finalCanvas.toDataURL('image/png');
+            link.click();
+        });
+
+        function draw() {
+            const width = canvas.width;
+            const height = canvas.height;
+
+            ctx.clearRect(0, 0, width, height);
+
+            if (uploadedImage) {
+                const imgWidth = uploadedImage.width * scale;
+                const imgHeight = uploadedImage.height * scale;
+                const x = (width - imgWidth) / 2 + offsetX;
+                const y = (height - imgHeight) / 2 + offsetY;
+                ctx.drawImage(uploadedImage, x, y, imgWidth, imgHeight);
+            }
+
+            ctx.drawImage(currentOutline, 0, 0, width, height);
+        }
+
+        // Initialize canvas
+        setCanvasSize();
+        loadOutline();
+    </script>
+</body>
+</html>
+
