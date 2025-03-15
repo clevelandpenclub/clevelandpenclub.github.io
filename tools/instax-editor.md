@@ -1,10 +1,19 @@
 <iframe src="instaxeditor/index.html" class="instaxframe"></iframe>
 
+<div class="mobilemessage" hidden>Sorry sweetie, this page doesn't support mobile browsers. Try using your desktop or laptop computer, or ask your local Amelorate for help! If you ask nicely enough she'll probably make it support your phone.</div>
+
 <style>
 .instaxframe {
     width: 100%;
     height: 500px;
     display: block;
+}
+
+.mobilemessage {
+    text-align: center;
+    padding = 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
 </style>
 
@@ -20,14 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
             iframe.remove(); // Remove the iframe
         }
 
-        const message = document.createElement("div");
-        message.textContent = "Sorry sweetie, this page doesn't support mobile browsers. Try using your desktop or laptop computer, or ask your local Amelorate for help! If you ask nicely enough she'll probably make it support your phone.";
-        message.style.textAlign = "center";
-        message.style.padding = "20px";
-        message.style.fontSize = "18px";
-        message.style.fontWeight = "bold";
-
-        document.body.appendChild(message);
+        const message = document.querySelector(".mobilemessage");
+        if (message) {
+            message.hidden = false;
+        }
     }
 });
 </script>
