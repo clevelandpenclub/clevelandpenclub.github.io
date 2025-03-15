@@ -98,6 +98,12 @@ In terms of copyright, the Cleveland Pen Club website is licensed under [Creativ
 This means that the webite, everything written on it, and all its pictures entirely lack copyright and are in the Public Domain.
 If this is a problem, you could include a different license at the bottom of the article you've written as long as the Cleveland Pen Club and Github are allowed to distriute the file and make changes as needed.
 
+Also, to make pictures that fit the style of this site you could use the Nomo Cam app on your phone.
+However while the app creates pictures that are very aesthetic, they're not very easy to look at if you want to actually see the details of your pen.
+Amelorate's got just the solution though.
+He wrote the [Instax Editor Tool](/tools/instax-editor), which you can use to edit pictures you've already taken to have the instant picture-style border, while preserving all the quality of the original photo.
+It doesn't work on mobile phones though.
+
 ## Editing Existing Posts
 
 The website's posts are stored in the [_posts folder](https://github.com/clevelandpenclub/clevelandpenclub.github.io/tree/main/_posts) in Github.
