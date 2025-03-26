@@ -11,4 +11,6 @@ There is a way around it though.
 
 TODO: Actually write the guide (i dont feel like doing it now)
 
+TODO: Maybe also a segment on how to get an email when a pen you're looking for appears on the PenBBS Etsy.
+
 {% include cle-comments.md %}
