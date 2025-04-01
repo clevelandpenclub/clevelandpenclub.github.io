@@ -2,7 +2,7 @@
 title: Story
 ---
 
-The (currently unnamed) pen club was first organized by Michelle at the November 2024 Ohio Pen Show on a single page of B5 paper to collect names and emails, and later sent out a mass mailer to collect info and opinions in a Google Form.
+The Cleveland Pen Club was first organized by Michelle at the 2024 Pelikan Hub and November 2024 Ohio Pen Show on a single page of B5 paper to collect names and emails, and later sent out a mass mailer to collect info and opinions in a Google Form.
 She probably still has that sheet of paper.
 
 Our first meeting took place on January 26th, 2025 from 1:15 to 5:00 PM.
