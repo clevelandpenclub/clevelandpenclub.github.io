@@ -3,7 +3,7 @@ title: Send a Note
 layout: page
 ---
 
-You could email us at [clevelandpenclub@gmail.com](mailto:clevelandpenclub@gmail.com), or just leave a comment below and we'll get back to you.
+You could email us at [clevelandpenclub@clevelandpen.club](mailto:clevelandpenclub@clevelandpen.club), or just leave a comment below and we'll get back to you.
 Feel free to also use this space to discuss pen-related topics too.
 Sort of like a bulletin board, maybe.
 
