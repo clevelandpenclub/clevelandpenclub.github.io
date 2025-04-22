@@ -27,6 +27,7 @@ Being the proud owner of such a pen, I decided to take some better pictures on m
 * [avonree on reddit](https://www.reddit.com/r/fountainpens/comments/1iuu2s3/new_pen_day_pilot_custom_823_rikka_green/)
 * [NotCharAznable on reddit](https://www.reddit.com/r/fountainpens/comments/1jjx67n/after_a_month_in_shipping_limbo_my_new_green/)
 * [Cool-Ad-9455 on reddit](https://www.reddit.com/r/fountainpens/comments/1jmnzli/pilot_custom_823_le_rikka/)
+* [DrSaif48 on /r/pen_swap](https://www.reddit.com/r/Pen_Swap/comments/1k56ige/wts_pilot_custom_823_green_rikka_special_edition/) (best)
 
 [^1]: On the Rakuten listings for the special edition Google Translate will sometimes translate it as Rokka, [but this is incorrect.](https://www.reddit.com/r/fountainpens/comments/1hnkaoo/npd_pilot_custom_823_green/m42xzvj/) The correct way to romanize the name is Rikka, which is also seen in [Pilot Iroshizuki Rikka](https://www.gentlemanstationer.com/blog/2024/12/17/new-arrivals-new-iroshizuku-inks). 
 
