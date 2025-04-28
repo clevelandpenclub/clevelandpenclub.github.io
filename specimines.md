@@ -4,6 +4,8 @@ title: Specimines
 
 These aren't actually for sale or anything, these are just pens I wanted to show off.
 
+Some pictures have a HD version. Click or tap on the image to load it in HD!
+
 {% include gallery.css.html %}
 
 <div class="gallery">
