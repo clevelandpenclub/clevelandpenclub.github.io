@@ -21,6 +21,7 @@
 - src: "/assets/pens/Omas360.jpg"
   alt: "Omas 360 Fountain Pen in Crazy Celuloid"
   description: "*Omas 360*"
+  hd: "/assets/pens/Omas360-HD.png"
 
 - src: "/assets/pens/DemonstratorSnorkel.jpg"
   alt: "Demonstrator Scheaffer Snorkel Mechanism"
