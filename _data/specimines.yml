@@ -13,3 +13,26 @@
 - src: "/assets/pens/MoonmanTi500.jpg"
   alt: "Moonman Ti500"
   description: "*Moonman Ti500*"
+
+- src: "/assets/pens/FacetMonoc.jpg"
+  alt: "Schon DSGN Faceted Titanium Shell with Monoc Nib"
+  description: "Schon DSGN Faceted Titanium Shell"
+
+- src: "/assets/pens/Omas360.jpg"
+  alt: "Omas 360 Fountain Pen in Crazy Celuloid"
+  description: "Omas 360"
+
+- src: "/assets/pens/DemonstratorSnorkel.jpg"
+  alt: "Demonstrator Scheaffer Snorkel Mechanism"
+  description: "A demonstrator pen with the Scheaffer Snorkel mechanism"
+  hd: "/assets/pens/DemonstratorSnorkel-HD.png"
+
+- src: "/assets/pens/PilotVPTimeline.jpg"
+  alt: "Many Pilot Vanishing Points showing the changes made to the model over the years of it available on the market"
+  description: "Pilot Vanishing Points"
+  hd: "/assets/pens/PilotVPTimeline-HD.png"
+
+- src: "/assets/pens/4WeirdNibs.jpg"
+  alt: "4 different pens with strange and different nibs"
+  description: "Pilot Super 500<br>Waterman Falcon Nib<br>Parker Vaccumatic 4mm Stub<br>Waterman BBB Flex Oblique"
+  hd: "/assets/pens/4WeirdNibs-HD.png"
