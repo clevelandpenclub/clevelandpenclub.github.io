@@ -13,9 +13,9 @@ He shared a lot of great fountain pen history and let us see and handle some of 
 He talked about books on fountain pens, among them Stuart Schneider and George Fischler’s two books, The Book of Fountain Pens and Pencils, and Fountain Pens and Pencils, The Golden Age of Writing Instruments. 
 Another is Fountain Pens, Vintage and Modern by Andreas Lambrou. 
 After our meeting Howard sent me information from Ranga Pens, a talented Indian pen maker. 
-Their website is www.rangapens.com. 
+Their website is [www.rangapens.com](https://www.rangapens.com). 
 Last, Howard forwarded me an email from the Central Ohio Pen Club in the Columbus area, which is holding a meeting on May 18. 
-Their website is www.ohiopens.org. 
+Their website is [www.ohiopens.org](https://www.ohiopens.org). 
 Thanks again, Howard!
 
 Kat shared with me an interesting article on inks from Rick Propas, which I have attached. 
