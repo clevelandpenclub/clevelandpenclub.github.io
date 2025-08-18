@@ -42,3 +42,5 @@ If you encounter anyone who is interested in the next meetup, forward them this 
 Hope to see you at any or all of these events!
 
 --Michelle
+
+{% include cle-comments.md %}
