@@ -3,6 +3,30 @@ layout: page
 title: Schedule
 ---
 
+9/4/2026 @ 7:12 PM:
+
+Cleveland fountain pen enthusiasts,
+
+Cleveland won't have an official Pelikan Hub this year, but we're getting together
+anyway, thanks to the efforts of Dan Szekeres! Consider this your invitation to an
+unofficial Cleveland pen gathering:
+
+When: Friday, September 25th, 6pm–9pm (same approximate time as a Pelikan Hub)
+
+Where: Panera Bread, 5090 Tiedeman Rd, Brooklyn, OH 44144
+
+There is no cost, but you are strongly encouraged to grab a bite or a drink while
+we're there, as supporting the venue is what makes this meeting spot available to us.
+Bring your favorite pens, inks, and paper to show off, and feel free to bring a
+friend who's curious about the hobby.
+
+For questions, contact Dan at djszekeres@gmail.com. Spread the word to your local
+fountain pen friends, and hope to see you!
+
+--Michelle
+
+---
+
 8/4/2026 @ 2:15 PM:
 
 Dear Cleveland fountain pen enthusiasts,
