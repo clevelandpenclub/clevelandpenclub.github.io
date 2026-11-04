@@ -3,6 +3,24 @@ layout: page
 title: Schedule
 ---
 
+11/3/2026 @ 11:12 PM:
+
+Dear Cleveland fountain pen enthusiasts,
+
+Thanks for a great meeting on October 25! The next meeting of the Cleveland
+Pen Club will be on Sunday, January 24, 2027, at 1:30PM - 3:30PM at the
+same location: Cuyahoga County Public Library, Independence Branch, 6361
+Selig Dr, Independence, OH 44131. We meet quarterly on the fourth Sundays in
+January, April, July and October. Plan to join us, and invite others!
+
+If you have any questions, suggestions, or ideas, please reach out.
+Otherwise, enjoy your pens, inks and paper, and spread the word about our
+club! I look forward to our next gathering.
+
+--Michelle
+
+---
+
 10/19/2026 @ 4:58 PM:
 
 Hello Cleveland area fountain pen enthusiasts,
