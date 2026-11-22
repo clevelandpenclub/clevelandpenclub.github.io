@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
-"""Download Cleveland Pen Club emails from IMAP and convert them into posts.
+"""List Cleveland Pen Club emails and convert chosen ones into posts.
 
 This script reads IMAP settings from ~/.mail.env, fetches messages from
-clevelandpenclub@gmail.com in INBOX and Archive, and writes Jekyll-style
-Markdown posts into _posts/.
+clevelandpenclub@gmail.com in INBOX (Archive is not scanned by default), and
+offers two actions:
+
+  list   -- print candidate emails with indices (writes nothing)
+  write  -- write only the selected indices as posts into _posts/
 
 It is intentionally conservative:
-- it skips messages whose output file already exists
+- writing is opt-in: only the indices named on the command line are written
+- existing files are never overwritten
+- it warns when the date already has a post (hand-written or edited title)
 - it strips Michelle's surname, phone number, and email address
-- it keeps the hand-written site posts untouched
 """
 
 from __future__ import annotations
@@ -16,11 +20,10 @@ from __future__ import annotations
 import argparse
 import email
 import imaplib
-import os
 import re
 import ssl
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import date, datetime
 from email.header import decode_header, make_header
 from email.utils import parsedate_to_datetime
 from html import unescape
@@ -29,7 +32,7 @@ from pathlib import Path
 from typing import Iterable
 
 EMAIL_FROM = "clevelandpenclub@gmail.com"
-DEFAULT_FOLDERS = ["INBOX", "Archive"]
+DEFAULT_FOLDERS = ["INBOX"]
 DEFAULT_OUTPUT_DIR = Path("_posts")
 DEFAULT_ENV_FILE = Path.home() / ".mail.env"
 
@@ -259,12 +262,82 @@ def collect_messages(mail, folders: Iterable[str]) -> list[PostDraft]:
     return drafts
 
 
+def existing_dates(output_dir: Path) -> dict[date, Path]:
+    """Map post dates gleaned from existing filenames to their file paths."""
+    found: dict[date, Path] = {}
+    for path in sorted(output_dir.glob("*.md")):
+        m = re.match(r"(\d{4})-(\d{1,2})-(\d{1,2})-", path.name)
+        if not m:
+            continue
+        try:
+            post_date = date(*(int(group) for group in m.groups()))
+        except ValueError:
+            continue
+        found.setdefault(post_date, path)
+    return found
+
+
+def print_listing(drafts: list[PostDraft], output_dir: Path) -> None:
+    existing = existing_dates(output_dir)
+    if not drafts:
+        print("(no candidate messages found)")
+        return
+
+    width = len(str(len(drafts)))
+    for i, draft in enumerate(drafts, 1):
+        path = output_dir / draft.filename
+        notes: list[str] = []
+        if path.exists():
+            notes.append("exists")
+        elif draft.date.date() in existing:
+            notes.append(f"same-date: {existing[draft.date.date()].name}")
+        note_text = f"  [{', '.join(notes)}]" if notes else ""
+        print(f"{i:>{width}}  {draft.date:%Y-%m-%d}  {draft.subject}")
+        print(f"    {draft.filename}{note_text}")
+
+
+def cmd_write(drafts: list[PostDraft], indices: list[int], output_dir: Path, dry_run: bool) -> None:
+    existing = existing_dates(output_dir)
+    for idx in dict.fromkeys(indices):
+        if not 1 <= idx <= len(drafts):
+            raise SystemExit(
+                f"index {idx} out of range: expected 1..{len(drafts)} "
+                "(re-run `list` for current indices)"
+            )
+        draft = drafts[idx - 1]
+        path = output_dir / draft.filename
+        print(f"== [{idx}] {draft.date:%Y-%m-%d} {draft.subject}")
+        if path.exists():
+            print(f"   skipped: {draft.filename} already exists")
+            continue
+        covering = existing.get(draft.date.date())
+        if covering is not None and covering != path:
+            print(f"   warning: {covering.name} already covers this date -- "
+                  "double-check you are not duplicating it")
+        if dry_run:
+            print(f"   dry-run: would write {draft.filename}")
+            continue
+        path.write_text(draft.content, encoding="utf-8")
+        print(f"   wrote {draft.filename}")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--env-file", type=Path, default=DEFAULT_ENV_FILE, help="Path to .mail.env")
-    parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR, help="Where to write posts")
-    parser.add_argument("--folders", nargs="*", default=DEFAULT_FOLDERS, help="IMAP folders to scan")
-    parser.add_argument("--dry-run", action="store_true", help="Show what would be written without writing files")
+    sub = parser.add_subparsers(dest="action", metavar="ACTION", required=True)
+
+    def add_common_options(p: argparse.ArgumentParser) -> None:
+        p.add_argument("--env-file", type=Path, default=DEFAULT_ENV_FILE, help="Path to .mail.env")
+        p.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR, help="Where to write posts")
+        p.add_argument("--folders", nargs="*", default=DEFAULT_FOLDERS, help="IMAP folders to scan")
+
+    list_parser = sub.add_parser("list", help="show candidate emails with indices")
+    add_common_options(list_parser)
+
+    write_parser = sub.add_parser("write", help="write the selected indices as posts")
+    add_common_options(write_parser)
+    write_parser.add_argument("indices", nargs="+", type=int, metavar="INDEX", help="indices from `list` output")
+    write_parser.add_argument("--dry-run", action="store_true", help="validate the selection without writing")
+
     args = parser.parse_args()
 
     cfg = load_config(args.env_file)
@@ -279,22 +352,10 @@ def main() -> int:
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
-    written = 0
-    skipped = 0
-    for draft in drafts:
-        path = args.output_dir / draft.filename
-        if path.exists():
-            print(f"skip {path} (already exists)")
-            skipped += 1
-            continue
-        if args.dry_run:
-            print(f"dry-run {path}")
-            continue
-        path.write_text(draft.content, encoding="utf-8")
-        print(f"write {path}")
-        written += 1
-
-    print(f"done: {written} written, {skipped} skipped")
+    if args.action == "list":
+        print_listing(drafts, args.output_dir)
+    else:
+        cmd_write(drafts, args.indices, args.output_dir, args.dry_run)
     return 0
 
 
